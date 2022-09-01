@@ -1,2 +1,2 @@
-wget https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+wget https://github.com/IrishMaestro/rockyou/raw/master/rockyou.txt.gz
 gunzip rockyou.txt.gz
