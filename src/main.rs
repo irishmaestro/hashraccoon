@@ -6,8 +6,7 @@ use std::str;
 use colored::*;
 use hex::decode;
 use md5::{compute, Digest};
-
-// use sha256::digest_bytes;
+use sha256::digest_bytes;
 
 mod init;
 
@@ -19,11 +18,11 @@ fn md5(p: &str) -> Digest {
     digest
 }
 
-// fn sha256(p: &str) {
-//     let b = p.as_bytes();
-//     let digest = digest_bytes(b);
-//     println!("{}", digest)
-// }
+fn sha256(p: &str) -> String {
+    let b = p.as_bytes();
+    let digest = digest_bytes(b);
+    digest
+}
 
 // fn decimal_to_string(d: Digest) -> String {
 //     let v = d.0;
@@ -53,19 +52,24 @@ fn vec_to_array<T>(v: Vec<T>) -> [T; 16] where T: Copy {
 fn main() -> io::Result<()> {
     init::initialize();
     let args: Vec<String> = env::args().collect();
-    let input = Digest(vec_to_array(string_to_decimal(&args[1])));
+    // let input = Digest(vec_to_array(string_to_decimal(&args[1])));
+    let input = &args[1];
     init::print_seq("🦝 Parsing md5 hash");
-    let mut hashes: HashMap<Digest, String> = HashMap::new();
+    // let mut hashes: HashMap<Digest, String> = HashMap::new();
+    let mut hashes: HashMap<String, String> = HashMap::new();
     let rockyou = File::open("rockyou.txt")?;
     let reader = BufReader::new(rockyou);
     init::print_seq("🦝 Loading rockyou wordlist");
     init::print_seq("🦝 Hashing wordlist with md5 algorithm");
     for line in reader.lines() {
-        let hash = md5(&line.as_ref().unwrap());
+        // let hash = md5(&line.as_ref().unwrap());
+        // hashes.insert(hash, line.unwrap());
+        let hash = sha256(&line.as_ref().unwrap());
+        // println!("Text: {:?}\n SHA256: {}", line.unwrap(), hash);
         hashes.insert(hash, line.unwrap());
     }
     init::print_seq("🦝 Searching HashMap for password...");
-    match hashes.get(&input) {
+    match hashes.get(input) {
         Some(value) => println!("🦝 Password found: <{}>", value.green().bold()),
         None => println!("Password not found...")
     }
