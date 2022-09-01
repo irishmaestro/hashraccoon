@@ -1,5 +1,7 @@
 # hashraccoon
 
+![raccoon](https://github.com/IrishMaestro/hashraccoon/raw/master/raccoon.jpeg "raccoon")
+
 ## Installation
 ### Clone the repository and run the install.sh bash script
 `git clone https://github.com/IrishMaestro/hashraccoon.git`
