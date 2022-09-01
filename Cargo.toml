@@ -1,0 +1,12 @@
+[package]
+name = "hashraccoon"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+colored = "2.0.0"
+hex = "0.4.3"
+md5 = "0.7.0"
+sha256 = "1.0.3"
