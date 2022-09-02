@@ -18,7 +18,7 @@ fn md5(p: &str) -> Digest {
 
 fn md5_search(data: &String, reader: BufReader<File>) {
     init::print_seq("🦝 Parsing md5 hash");
-    let input = Digest(vec_to_array(string_to_decimal(data)));
+    let input = Digest(vec_to_array(hex_to_decimal(data)));
     let mut hashes: HashMap<Digest, String> = HashMap::new();
     init::print_seq("🦝 Hashing wordlist with md5 algorithm");
     for line in reader.lines() {
@@ -64,7 +64,7 @@ fn sha256_search(input: &String, reader: BufReader<File>) {
 //     hex_string
 // }
 
-fn string_to_decimal(s: &str) -> Vec<u8> {
+fn hex_to_decimal(s: &str) -> Vec<u8> {
     let decimal = decode(s).unwrap();
     decimal
 }
