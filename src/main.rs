@@ -8,6 +8,8 @@ use hex::decode;
 use md5::{compute, Digest};
 use sha256::digest_bytes;
 
+extern crate num_cpus;
+
 mod init;
 
 fn md5(p: &str) -> Digest {
@@ -53,17 +55,6 @@ fn sha256_search(input: &String, reader: BufReader<File>) {
     }
 }
 
-// fn decimal_to_string(d: Digest) -> String {
-//     let v = d.0;
-//     let mut result = vec![];
-//     for d in v {
-//         let mut r = format!("{:x}", d);
-//         result.push(r);
-//     }
-//     let hex_string = result.join("");
-//     hex_string
-// }
-
 fn hex_to_decimal(s: &str) -> Vec<u8> {
     let decimal = decode(s).unwrap();
     decimal
@@ -80,6 +71,8 @@ fn vec_to_array<T>(v: Vec<T>) -> [T; 16] where T: Copy {
 
 fn main() -> io::Result<()> {
     init::initialize();
+    let cpus = format!("🦝 Utilizing {} CPUs", num_cpus::get());
+    init::print_seq(&cpus);
     let args: Vec<String> = env::args().collect();
     let rockyou = File::open("rockyou.txt")?;
     let reader = BufReader::new(rockyou);
