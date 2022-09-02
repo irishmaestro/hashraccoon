@@ -1,8 +1,8 @@
 # hashraccoon
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?style=flat&color=white)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/irishmaestro/hashraccoon?style=flat&color=white&label=commits)
-![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?style=flat&color=white)
-![GitHub Repo stars](https://img.shields.io/github/stars/irishmaestro/hashraccoon?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/irishmaestro/hashraccoon?color=black&style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/irishmaestro/hashraccoon?color=black&label=commits&style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?color=black&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 
 ![raccoon](https://github.com/IrishMaestro/hashraccoon/raw/master/raccoon.jpeg "raccoon")
 
