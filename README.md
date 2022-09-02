@@ -1,4 +1,6 @@
 # hashraccoon
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?color=white)
+![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?color=white)
 
 ![raccoon](https://github.com/IrishMaestro/hashraccoon/raw/master/raccoon.jpeg "raccoon")
 
