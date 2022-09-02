@@ -8,7 +8,7 @@
 
 ## Installation
 ### Clone the repository and run the install.sh script
-  git clone https://github.com/IrishMaestro/hashraccoon.git
+```git clone https://github.com/IrishMaestro/hashraccoon.git```
 
 `cd hashraccoon`
 
