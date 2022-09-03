@@ -5,7 +5,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 
-![raccoon](https://user-images.githubusercontent.com/70972101/188251139-554fa07d-37e8-4eee-a68c-50369d7f6a23.jpeg)
+![hashraccoon](https://user-images.githubusercontent.com/70972101/188285582-fd616091-48ef-46b0-9351-91c78137d613.gif)
 
 ## Installation
 ### Install cargo
