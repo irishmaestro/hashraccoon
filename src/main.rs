@@ -72,7 +72,7 @@ fn vec_to_array<T>(v: Vec<T>) -> [T; 16] where T: Copy {
 
 fn main() -> io::Result<()> {
     init::initialize();
-    let cpus = format!("🦝 Utilizing {} CPUs", num_cpus::get());
+    // let cpus = format!("🦝 Utilizing {} CPUs", num_cpus::get());
     // init::print_seq(&cpus);
     let args: Vec<String> = env::args().collect();
     let path = Path::new(&args[3]);

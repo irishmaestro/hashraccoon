@@ -2,6 +2,7 @@
 name = "hashraccoon"
 version = "0.0.1"
 authors = ["irishmaestro"]
+description = "MD5/SHA256 HASH ATTACK IN RUST"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
