@@ -26,7 +26,7 @@ cargo build --release
 ./target/release/hashraccoon <algorithm> <hash> <path/to/wordlist>
 ```
 
-Examples
+### Examples
 ```shell
 ./target/release/hashraccoon md5 fd3dd4b168a1cae43f5b329142f73d27 $(pwd)/rockyou.txt
 ```
