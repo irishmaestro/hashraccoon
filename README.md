@@ -17,7 +17,7 @@ curl https://sh.rustup.rs -sSf | sh
 cargo install hashraccoon
 ```
 
-### Download rockyou wordlist 
+### Download the [rockyou](https://github.com/IrishMaestro/rockyou "rockyou") wordlist 
 ```shell
 wget https://github.com/IrishMaestro/rockyou/raw/master/rockyou.txt.gz
 gunzip rockyou.txt.gz
