@@ -12,7 +12,7 @@
 ```shell 
 curl https://sh.rustup.rs -sSf | sh
 ```
-### Install the hashraccoon crate
+### Install the hashraccoon [crate](https://crates.io/crates/hashraccoon "crate")
 ```shell
 cargo install hashraccoon
 ```
