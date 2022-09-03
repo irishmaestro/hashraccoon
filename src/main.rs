@@ -2,6 +2,7 @@ use std::collections::HashMap;
 use std::env;
 use std::fs::File;
 use std::io::{self, prelude::*, BufReader};
+use std::path::Path;
 use std::str;
 use colored::*;
 use hex::decode;
@@ -72,9 +73,10 @@ fn vec_to_array<T>(v: Vec<T>) -> [T; 16] where T: Copy {
 fn main() -> io::Result<()> {
     init::initialize();
     let cpus = format!("🦝 Utilizing {} CPUs", num_cpus::get());
-    init::print_seq(&cpus);
+    // init::print_seq(&cpus);
     let args: Vec<String> = env::args().collect();
-    let rockyou = File::open("rockyou.txt")?;
+    let path = Path::new(&args[3]);
+    let rockyou = File::open(&path)?;
     let reader = BufReader::new(rockyou);
     init::print_seq("🦝 Loading rockyou wordlist");
     match args[1].as_str() {
