@@ -5,7 +5,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 
-![hashraccoon](https://user-images.githubusercontent.com/70972101/188285582-fd616091-48ef-46b0-9351-91c78137d613.gif)
+![hashraccoon](https://user-images.githubusercontent.com/70972101/188285833-948f4432-89a1-4733-8ba1-dce8cc835f8f.gif)
 
 ## Installation
 ### Install cargo
@@ -15,6 +15,12 @@ curl https://sh.rustup.rs -sSf | sh
 ### Install the hashraccoon crate
 ```shell
 cargo install hashraccoon
+```
+
+### Download rockyou wordlist 
+```shell
+wget https://github.com/IrishMaestro/rockyou/raw/master/rockyou.txt.gz
+gunzip rockyou.txt.gz
 ```
 
 ### Run hashraccoon
