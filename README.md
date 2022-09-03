@@ -28,7 +28,10 @@ cargo build --release
 
 Examples
 
-https://user-images.githubusercontent.com/70972101/188250667-5d130679-684e-46a9-9726-cb94b939896a.mov
+
+https://user-images.githubusercontent.com/70972101/188250708-992a78b6-8204-4f26-8bfb-bf31bd2be146.mov
+
+
 
 ```shell
 ./target/release/hashraccoon md5 fc5e038d38a57032085441e7fe7010b0
