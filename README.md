@@ -8,32 +8,27 @@
 ![raccoon](https://user-images.githubusercontent.com/70972101/188251139-554fa07d-37e8-4eee-a68c-50369d7f6a23.jpeg)
 
 ## Installation
-### Clone the repository and run the install.sh script
+### Install cargo
 ```shell 
-git clone https://github.com/IrishMaestro/hashraccoon.git
+curl https://sh.rustup.rs -sSf | sh
 ```
-
+### Install the hashraccoon crate
 ```shell
-cd hashraccoon && chmod +x install.sh && ./install.sh
-```
-
-### Compile the code
-```shell
-cargo build --release
+cargo install hashraccoon
 ```
 
 ### Run hashraccoon
 ```shell
-./target/release/hashraccoon <algorithm> <hash> <path/to/wordlist>
+hashraccoon <algorithm> <hash> <path/to/wordlist>
 ```
 
 ### Examples
 ```shell
-./target/release/hashraccoon md5 fd3dd4b168a1cae43f5b329142f73d27 $(pwd)/rockyou.txt
+hashraccoon md5 fd3dd4b168a1cae43f5b329142f73d27 $(pwd)/rockyou.txt
 ```
 
 ```shell
-./target/release/hashraccoon sha256 dc11a50ee7b0763306d2019e611d1ed3e66b3f182b3b2c18acbacccfd0ba656b $(pwd)/rockyou.txt
+hashraccoon sha256 dc11a50ee7b0763306d2019e611d1ed3e66b3f182b3b2c18acbacccfd0ba656b $(pwd)/rockyou.txt
 ```
 
 https://user-images.githubusercontent.com/70972101/188251119-e2a6bb54-9edf-412f-98c1-60c54eef56ab.mov
