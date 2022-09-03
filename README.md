@@ -4,7 +4,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/irishmaestro/hashraccoon?color=black&style=for-the-badge)
 
-![raccoon](https://github.com/IrishMaestro/hashraccoon/raw/master/raccoon.jpeg "raccoon")
+![raccoon](https://user-images.githubusercontent.com/70972101/188251139-554fa07d-37e8-4eee-a68c-50369d7f6a23.jpeg)
 
 ## Installation
 ### Clone the repository and run the install.sh script
@@ -29,7 +29,8 @@ cargo build --release
 Examples
 
 
-https://user-images.githubusercontent.com/70972101/188250708-992a78b6-8204-4f26-8bfb-bf31bd2be146.mov
+
+https://user-images.githubusercontent.com/70972101/188251119-e2a6bb54-9edf-412f-98c1-60c54eef56ab.mov
 
 
 
