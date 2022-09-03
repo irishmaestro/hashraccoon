@@ -1,6 +1,6 @@
 [package]
 name = "hashraccoon"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["irishmaestro"]
 repository = "https://github.com/IrishMaestro/hashraccoon"
 description = "MD5/SHA256 HASH ATTACK IN RUST"
